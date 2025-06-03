@@ -13,16 +13,24 @@ def run():
                 {"id": 102, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
             ]
             route.fulfill(status=200, content_type="application/json", body=str(mock_response))
-            print("Mocked products API with 2 fake items")
+            print("Mocked products API with fake items")
 
         def handle_womenproducts_api(route, request):
             mock_response = [
                 {"id": 101, "name": "Mock Hoodie", "price": "1999", "image": "mock-image.jpg"},
+                {"id": 102, "name": "Mock T-Shirt", "price": "919", "image": "mock-image2.jpg"},
+                {"id": 102, "name": "Mock Hoodie Men", "price": "699", "image": "mock-image2.jpg"},
                 {"id": 102, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
+                {"id": 102, "name": "Mock T-shirt Men", "price": "399", "image": "mock-image2.jpg"},
+                {"id": 102, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
+                {"id": 102, "name": "Mock T-shirt women", "price": "929", "image": "mock-image2.jpg"},
+                {"id": 102, "name": "Mock hoodie women", "price": "9929", "image": "mock-image2.jpg"},
+                {"id": 102, "name": "Mock T-shirt Men", "price": "999", "image": "mock-image2.jpg"},
+                {"id": 102, "name": "Mock T-shirt Child", "price": "899", "image": "mock-image2.jpg"},
             ]
             route.fulfill(status=200, content_type="application/json", body=str(mock_response))
 
-        print("Mocked products API with 2 fake items")
+        print("Mocked products API with fake items")
 
         def handle_cart_api(route, request):
             route.fulfill(status=200, content_type="application/json", body='{"success": true, "message": "Item added"}')
