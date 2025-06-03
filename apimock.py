@@ -10,23 +10,26 @@ def run():
         def handle_menproducts_api(route, request):
             mock_response = [
                 {"id": 101, "name": "Mock Hoodie", "price": "1999", "image": "mock-image.jpg"},
-                {"id": 102, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
+                {"id": 102, "name": "Mock T-shirt", "price": "919", "image": "mock-image2.jpg"},
+                {"id": 103, "name": "Mock Dress pent", "price": "999", "image": "mock-image2.jpg"},
+                {"id": 104, "name": "Mock Dress shirt men", "price": "3999", "image": "mock-image2.jpg"},
+                {"id": 105, "name": "Mock T-shirt", "price": "9929", "image": "mock-image2.jpg"},
             ]
             route.fulfill(status=200, content_type="application/json", body=str(mock_response))
             print("Mocked products API with fake items")
 
         def handle_womenproducts_api(route, request):
             mock_response = [
-                {"id": 101, "name": "Mock Hoodie", "price": "1999", "image": "mock-image.jpg"},
-                {"id": 102, "name": "Mock T-Shirt", "price": "919", "image": "mock-image2.jpg"},
-                {"id": 102, "name": "Mock Hoodie Men", "price": "699", "image": "mock-image2.jpg"},
-                {"id": 102, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
-                {"id": 102, "name": "Mock T-shirt Men", "price": "399", "image": "mock-image2.jpg"},
-                {"id": 102, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
-                {"id": 102, "name": "Mock T-shirt women", "price": "929", "image": "mock-image2.jpg"},
-                {"id": 102, "name": "Mock hoodie women", "price": "9929", "image": "mock-image2.jpg"},
-                {"id": 102, "name": "Mock T-shirt Men", "price": "999", "image": "mock-image2.jpg"},
-                {"id": 102, "name": "Mock T-shirt Child", "price": "899", "image": "mock-image2.jpg"},
+                {"id": 106, "name": "Mock Hoodie", "price": "1999", "image": "mock-image.jpg"},
+                {"id": 107, "name": "Mock T-Shirt", "price": "919", "image": "mock-image2.jpg"},
+                {"id": 108, "name": "Mock Hoodie", "price": "699", "image": "mock-image2.jpg"},
+                {"id": 109, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
+                {"id": 110, "name": "Mock T-shirt", "price": "399", "image": "mock-image2.jpg"},
+                {"id": 111, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
+                {"id": 112, "name": "Mock T-shirt women", "price": "929", "image": "mock-image2.jpg"},
+                {"id": 113, "name": "Mock hoodie women", "price": "9929", "image": "mock-image2.jpg"},
+                {"id": 114, "name": "Mock T-shirt", "price": "999", "image": "mock-image2.jpg"},
+                {"id": 115, "name": "Mock T-shirt Child", "price": "899", "image": "mock-image2.jpg"},
             ]
             route.fulfill(status=200, content_type="application/json", body=str(mock_response))
 
